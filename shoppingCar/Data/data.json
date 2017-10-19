@@ -1,0 +1,30 @@
+[
+  {
+    "names":"oppr9s",
+    "imgs":"./Content/img/1.jpg",
+    "state":true,
+    "price":"2599.4",
+    "btn":"删除"
+  },
+  {
+    "names":"iphone7",
+    "imgs":"./Content/img/2.jpg",
+    "state":true,
+    "price":"4566.5",
+    "btn":"删除"
+  },
+  {
+    "names":"华为P9",
+    "imgs":"./Content/img/3.jpg",
+    "state":true,
+    "price":"3685",
+    "btn":"删除"
+  },
+  {
+    "names":"ViVoXplus",
+    "imgs":"./Content/img/4.jpg",
+    "state":true,
+    "price":"2899.4",
+    "btn":"删除"
+  }
+]

@@ -1,0 +1,27 @@
+<table border="1px">
+    <tr>
+        <td><input type="checkbox" ng-class="{allon:flag}" ng-click="checkAll()">&nbsp;&nbsp;<span>全选/全不选</span></td>
+        <td>商品名称</td>
+        <td>商品单价</td>
+        <td>商品数量</td>
+        <td>小计</td>
+        <td>操作</td>
+    </tr>
+    <tr ng-repeat="tab in tabs" tab="tab" index="{{$index}}">
+        <td><input
+                type="checkbox"
+                checked="{checked:tab.state}"
+                ng-click="itemChecked(index)"
+                ></td>
+        <td>{{tab.names}}<img ng-src="{{tab.imgs}}"></td>
+        <td>{{tab.price}}</td>
+        <td><span  id="sub" >-</span><input type="text" style="width: 30px"; value="1" id="txt"><span id="plus">+</span></td>
+        <td>{{tab.price}}</td>
+        <td><button id="out" ng-click="deleteItem(index)">{{tab.btn}}</button></td>
+    </tr>
+</table>
+<div id="meeting"></div>
+<div id="last">
+    数量：<span id="count"></span><br/>
+    总计：<span id="price"></span>
+</div>
